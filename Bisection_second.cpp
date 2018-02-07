@@ -1,5 +1,6 @@
-#include<stdio.h>
+#include<iostream>
 #include<math.h>
+using namespace std;
 int c=1;
 void bisec(float a,float b)
 {float l=0;
@@ -7,7 +8,7 @@ void bisec(float a,float b)
    float k=l*sin(l)-1;
     if(c==7)
     {
-        printf("%f",l);
+        cout<<l;
     }
     else if(k<0)
     {
