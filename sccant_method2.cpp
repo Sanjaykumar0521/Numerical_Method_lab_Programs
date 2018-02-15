@@ -10,7 +10,7 @@ double c=0,x2=0,error=0;
 double sccant_method(double x0, double x1)
 {   c++;
  x2=x1-equ(x1)*((x1-x0)/(equ(x1)-equ(x0)));
-    error=abs(((x2-x1)/x2)*100);
+    error=fabs(((x2-x1)/x2)*100);
    if(error<0.1)
    {
        exit(0);
